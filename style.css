@@ -20,15 +20,32 @@ header{
     font-size: 1.1em;
     text-align: center;
     padding: auto 3em;
+    cursor: pointer;
 }
- #get-started:hover{
+#sign-in:hover{
     background-color:#067543 ;
+    color: white;
+}
+.illustration h1{
+    font-weight: 700;
+}
+.illustration .red-text{
+    color: #FD511A;
+}
+.illustration .green-text{
+   color: #21B573;
+}
+.illustration .text{
+    color: #6C6B6B;
 }
 #get-started{
     font-size: 1.3em;
     background-color: #21B573;
     border-radius: 36px;
     text-decoration: none;
+}
+#get-started:hover{
+    background-color:#067543 ;
 }
 .feature-img1{
     background-color: #F8FFFB;
@@ -62,6 +79,28 @@ header{
 .feature-box:hover{
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.267);
 }
+
+.course-box{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.267);
+    border-radius: 18px;
+    height: 30rem;
+    position: absolute;
+    margin-bottom: 3rem;
+}
+.row h4{
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.button-bottom{
+    position: absolute;
+    bottom: 3.5rem;
+}
+
+.date-bottom{
+    position: absolute;
+    bottom: 1rem;
+}
+
 .buy-course{
     font-size: 1.3em;
     background-color: #21B573;
@@ -75,19 +114,11 @@ header{
     text-decoration: none;
     color: white;
 }
-.card-footer2{
-    height: 4rem;
-}
-.card{
-    border-radius: 18px;
-}
 
-.card:hover{
-    box-shadow:5px 5px 15px rgba(0, 0, 0, 0.267);
-}
 
 footer{
     background-color: #282531;
+    padding-top: 5rem;
 }
 footer a{
     text-decoration: none;
@@ -107,6 +138,77 @@ footer p{
     margin-top: 3rem;
     color: gray;
 }
+
+footer .copyright{
+    font-size: .9em;
+}
+
+
+ 
+
+
+
+@media (max-width: 768px) {
+    header{
+        height: 850px;
+        text-align: center;
+    }
+    #sign-in{
+        width: 20%;
+        text-align: center;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    .course-box{
+        height: 33rem;
+    }
+   
+   
+
+}
+
+@media (max-width: 650px) {
+    .course-box{
+        height: 30rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header{
+        height: 850px;
+    }
+   
+    #sign-in{
+        width: 20%;
+        text-align: center;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    .course-box{
+        height: 30rem;
+    
+    }
+    footer p,a {
+        font-size: .8rem;
+    }
+    footer .copyright{
+        font-size: .7rem;
+    }
+
+    
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+
 
 
 
