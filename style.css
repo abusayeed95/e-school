@@ -146,7 +146,7 @@ footer .copyright{
 
  
 
-
+/* media query */
 
 @media (max-width: 768px) {
     header{
@@ -201,10 +201,6 @@ footer .copyright{
     }
 
     
-
-}
-
-@media (max-width: 992px) {
 
 }
 
