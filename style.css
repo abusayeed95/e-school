@@ -32,7 +32,7 @@ header{
 .illustration .red-text{
     color: #FD511A;
 }
-.illustration .green-text{
+.green-text{
    color: #21B573;
 }
 .illustration .text{
@@ -143,6 +143,41 @@ footer .copyright{
     font-size: .9em;
 }
 
+.bonus-box{
+    border-radius: 50% 50% 0% 0%;
+    border: 3px solid #21B573;
+
+}
+.bonus-box h3{
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+    animation: heading 2s ease-in-out infinite forwards alternate;
+}
+
+@keyframes heading{
+    0%{
+        letter-spacing: 0.5rem;
+    }
+    100%{
+        letter-spacing: 1rem;
+    }
+}
+
+.bonus-box ul{
+    line-height: 2rem;
+    animation: bonus-list 3s ease-in-out  infinite forwards alternate;
+}
+
+@keyframes bonus-list{
+    0%{
+        letter-spacing: .1rem;
+        font-weight: 600;
+    }
+    100%{
+        letter-spacing: .2rem;
+        font-weight: 700;
+    }
+}
 
  
 
@@ -196,11 +231,25 @@ footer .copyright{
     footer .copyright{
         font-size: .7rem;
     }
+    .bonus-box h3{
+        font-size: 1rem;
+    }
+    .bonus-box ul{
+        font-size: .8rem;
+    }
+
+
 }
 
 @media (max-width: 400px) {
     .course-box{
         height: 28rem;
+    }
+    .bonus-box h3{
+        font-size: 1rem;
+    }
+    .bonus-box ul{
+        font-size: .8rem;
     }
 }
 
